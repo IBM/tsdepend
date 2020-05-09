@@ -53,8 +53,7 @@ git fetch origin $INPUT_STABLE_BRANCH
 git checkout $INPUT_STABLE_BRANCH 
 git pull
 
-git fetch origin $INPUT_DEVELOPMENT_BRANCH
-git checkout $INPUT_DEVELOPMENT_BRANCH
+git checkout -B $INPUT_DEVELOPMENT_BRANCH
 git pull
 
 
