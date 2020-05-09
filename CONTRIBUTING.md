@@ -73,17 +73,21 @@ git commit -s
 
 Please feel free to connect with us using the [issue tracker](https://github.com/ibm/tsdepend/issues).
 
+---
+
 ## Setup
 
-**FIXME** Please add any special setup instructions for your project to help the developer
-become productive quickly.
+:warning: Note that this project uses the `yarn` package manager.
+After forking and cloning the repository you have to install the dependencies using `yarn install`.
+
+If everything was successful, try building the project using `yarn build`.
 
 ## Testing
 
-**FIXME** Please provide information that helps the developer test any changes they make
-before submitting.
+After the [setup](#setup) is completed you can develop your changes and test everything using `yarn test`.
+If you want to see the test coverage, you can use the `yarn test:coverage` command.
 
 ## Coding style guidelines
 
-**FIXME** Optional, but recommended: please share any specific style guidelines you might
-have for your project.
+Use `git commit -s` to commit your changes. We're using commitizen to make sure the commit message format fits our requirements.
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
