@@ -1,4 +1,4 @@
-# tsdepend
+# tsdepend ![(workflow)](https://github.com/IBM/tsdepend/workflows/(Unnamed%20workflow)/badge.svg?branch=master)
 
 tsdepend helps you, to keep your code organized over time. 🙌
 
