@@ -1,0 +1,24 @@
+# This workflow will update our next branch automatically with the latest changes from master
+
+name: Tsdepend Update Next with Master
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  nightly-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Update Next Branch
+        uses: ./.github/actions/update-branch
+        with:
+          stable_branch: "master"
+          development_branch: "next"
+          allow_ff: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
