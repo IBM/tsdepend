@@ -91,3 +91,10 @@ If you want to see the test coverage, you can use the `yarn test:coverage` comma
 
 Use `git commit -s` to commit your changes. We're using commitizen to make sure the commit message format fits our requirements.
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+---
+
+## Releases
+
+Every PR that gets merged will automatically be released to the public npm registry. To make sure this works correctly, please use the meaningful commit messages.
+The Changelog is also automatically generated and published to the repositories release page.

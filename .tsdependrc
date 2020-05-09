@@ -1,0 +1,16 @@
+{
+    "cycle": ["src/**/*.ts"],
+    "layeredArchitecture": {
+        "layer": {
+            "cli": ["src/cli/**/*.ts"],
+            "config": ["src/config/**/*.ts"],
+            "lib": ["src/lib/**/*.ts"],
+            "integrations": ["src/integrations/**/*.ts"]
+        },
+        "accessedBy": {
+            "cli": [],
+            "integrations": [],
+            "config": ["cli", "lib"]
+        }
+   }
+}

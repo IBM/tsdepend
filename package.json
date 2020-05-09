@@ -1,0 +1,57 @@
+{
+  "name": "tsdepend",
+  "version": "0.0.0-development",
+  "description": "tsdepend helps you, to keep your code organized over time.",
+  "main": "index.js",
+  "bin": {
+    "tsdepend": "dist/cli/index.js"
+  },
+  "repository": "git@github.com:ibm/tsdepend.git",
+  "author": "Alexander Bartels <alexander.bartels@ibm.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "commit": "yarn git-cz",
+    "clean": "./node_modules/.bin/rimraf dist",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "build": "tsc -p tsconfig.json",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.1.0",
+    "jest": "^25.2.7",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.4",
+    "ts-jest": "^25.3.1"
+  },
+  "dependencies": {
+    "@phenomnomnominal/tsquery": "^4.0.0",
+    "@rushstack/node-core-library": "^3.19.6",
+    "@rushstack/ts-command-line": "^4.3.13",
+    "cosmiconfig": "^6.0.0",
+    "dependency-graph": "^0.9.0",
+    "fast-glob": "^3.2.2",
+    "rxjs": "^6.5.5",
+    "typescript": "^3.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": [
+      "master",
+      {
+        "name": "next",
+        "prerelease": true
+      }
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
