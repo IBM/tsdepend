@@ -1,4 +1,4 @@
-# tsdepend
+# tsdepend ![Tsdepend CI Release](https://github.com/IBM/tsdepend/workflows/Tsdepend%20CI%20Release/badge.svg)
 
 tsdepend helps you, to keep your code organized over time. 🙌
 
