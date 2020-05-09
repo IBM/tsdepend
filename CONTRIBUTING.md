@@ -96,7 +96,28 @@ Use `git commit -s` to commit your changes. We're using commitizen to make sure 
 
 ---
 
+## Development Workflow - Git Branches
+
+### Infinite lifetime branches
+* `origin/master`- always production ready and will be released to NPM automatically with each merged PR
+* `origin/next` - like master this branch should always be stable, but will contain preview features and breaking changes. We will collect breaking changes here to minimize version dumps and to try new things out. After a PR is merged the `tsdepend@next` version will be updated at NPM. Once we think we are ready for a new major version, we will merge the next branch into master. This has do be done manually and through a PR. To keep this branch always up to date, the changes from master should be incorporated on a regular basis.
+
+### Limited lifetime branches
+* **Feature branches**: use feature branches (Pattern: `feat/<name>`) to develop new things. Once you're ready, raise a PR against master or next, depending on the type of change.
+* **Bugfix branches**: use bugfix branches to fix bugs (Pattern: `fix/<name>`). Once you're ready, raise a PR against master or next.
+* **Chore branches**:  use chore branches (Pattern: `fix/<name>`), if you enhance our documentation or adding testcases. Once you're ready, raise a PR against master or next.
+
+
+---
+
 ## Releases
 
-Every PR that gets merged will automatically be released to the public npm registry. To make sure this works correctly, please use the meaningful commit messages.
+A new releases is created after every merge to the master branch. All releases are created with https://semantic-release.gitbook.io/semantic-release/ even the @next releases. 
+To make sure this works correctly, please use the meaningful commit messages.
 The Changelog is also automatically generated and published to the repositories release page.
+
+### @next Release
+we use dist tags do distribute our preview for the upcomming version: https://docs.npmjs.com/cli/dist-tag
+with @next you always get the prerelease for the upcomming version. This might include breaking changes!
+
+
