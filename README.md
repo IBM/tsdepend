@@ -348,6 +348,23 @@ await expect(architecture).toMatchRulesfromConfig();
 
 ---
 
+## How does tsdepend compare to tool XYZ?
+
+### Linting Tools
+Linting tools like eslint or tslint are more focused on testing a single file, rather than the whole project. TSDepend tests your whole project for architectural contraints instead of testing a single file for some code issues. Normally you would always use both tools together: ESLint to find code issues and TSDepend to find architectural issues.  
+
+### Madge
+If you want a visualization, try [madge](https://www.npmjs.com/package/madge). TSDepend is more for unit testing your code against constraints you have defined. 
+
+### Inspired by Tools from the Java Ecosystem
+There are some exisiting tools in the java ecosystem that inspired me to implement something similar for typescript.
+
+- https://github.com/clarkware/jdepend
+- https://github.com/TNG/ArchUnit
+
+---
+
+
 ## License & Authors
 
 If you would like to see the detailed LICENSE click [here](LICENSE).
