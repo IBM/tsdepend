@@ -14,7 +14,7 @@ export const resolveTypescriptSourceFile = (
     FileSystem.exists(filePath) &&
     !FileSystem.getLinkStatistics(filePath).isDirectory()
   ) {
-    return filePath;
+    return FileSystem.getRealPath(filePath);
   }
 
   // if the file path is a directory, we need to check for an index.{ts,tsx} file
@@ -31,7 +31,7 @@ export const resolveTypescriptSourceFile = (
   );
 
   if (extension) {
-    return p + extension;
+    return FileSystem.getRealPath(p + extension);
   }
 
   return null;
