@@ -24,8 +24,8 @@
     "cz-conventional-changelog": "3.1.0",
     "jest": "^26.5.3",
     "rimraf": "^3.0.2",
-    "semantic-release": "^17.0.4",
-    "ts-jest": "^25.3.1"
+    "semantic-release": "^17.3.0",
+    "ts-jest": "^26.4.4"
   },
   "dependencies": {
     "@phenomnomnominal/tsquery": "^4.0.0",
