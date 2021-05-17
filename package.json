@@ -13,6 +13,7 @@
     "commit": "yarn git-cz",
     "clean": "./node_modules/.bin/rimraf dist",
     "test": "jest",
+    "citest": "CI=true jest --reporters=default --reporters=jest-github-actions-reporter --coverage",
     "test:coverage": "jest --coverage",
     "build": "tsc -p tsconfig.json",
     "semantic-release": "semantic-release"
@@ -23,6 +24,7 @@
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
     "jest": "^26.5.3",
+    "jest-github-actions-reporter": "^1.0.3",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.3.0",
     "ts-jest": "^26.4.4"
