@@ -4,7 +4,7 @@ name: Tsdepend Update Next with Master
 
 on:
   push:
-    branches: []
+    branches: [master]
 
 jobs:
   nightly-merge:
