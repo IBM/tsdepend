@@ -19,25 +19,25 @@
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "@types/node": "^13.11.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.6.1",
     "commitizen": "^4.0.3",
-    "cz-conventional-changelog": "3.1.0",
-    "jest": "^26.5.3",
+    "cz-conventional-changelog": "3.3.0",
+    "jest": "^27.0.3",
     "jest-github-actions-reporter": "^1.0.3",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.3.0",
-    "ts-jest": "^26.4.4"
+    "ts-jest": "^27.0.2"
   },
   "dependencies": {
     "@phenomnomnominal/tsquery": "^4.0.0",
     "@rushstack/node-core-library": "^3.19.6",
     "@rushstack/ts-command-line": "^4.3.13",
-    "cosmiconfig": "^6.0.0",
-    "dependency-graph": "^0.9.0",
+    "cosmiconfig": "^7.0.0",
+    "dependency-graph": "^0.11.0",
     "fast-glob": "^3.2.2",
-    "rxjs": "^6.5.5",
-    "typescript": "^3.8.3"
+    "rxjs": "^7.1.0",
+    "typescript": "^4.3.2"
   },
   "publishConfig": {
     "access": "public"

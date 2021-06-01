@@ -60,7 +60,7 @@ export class LayerDependencySpecification {
       .toPromise();
 
     return (
-      result
+      result!
         // keep only layers which have a dependency
         .filter((l) => l.dependencies.length > 0)
         // map internal result to the Layer specified by the user
