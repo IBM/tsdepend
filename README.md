@@ -369,7 +369,7 @@ There are some exisiting tools in the java ecosystem that inspired me to impleme
 
 If you would like to see the detailed LICENSE click [here](LICENSE).
 
-- Author: Alexander Bartes <alexander.bartels@ibm.com>
+- Author: [Alexander Bartels](https://github.com/alexanderbartels)
 
 ```text
 Copyright:: 2020 IBM, Inc
